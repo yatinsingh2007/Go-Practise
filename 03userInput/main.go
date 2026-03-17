@@ -13,7 +13,8 @@ func main() {
 	// comma ok , comma error
 	input , err := reader.ReadString('\n');
 	if err != nil{
-		fmt.Println(err)
+		fmt.Println("Error reading input")
+		return
 	}
 	fmt.Printf("The rating of your pizza is : %s\n", input)
 	fmt.Printf("The type of rating of your pizza is : %T\n", input)
